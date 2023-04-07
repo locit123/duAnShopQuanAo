@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="hover.css">
+    <title>Document</title>
+    <style>
+        .main__item{
+            margin-top: 64px;
+            font-family: sans-serif;
+        }
+        .main__item--quanli{
+            margin: 0 70px;
+        }
+        .main__item--content{
+            background-color: #dfe6e9;
+            padding: 5px 0 5px 20px;
+        }
+        .main__item--content-heade-ionicon{
+            display: flex;
+            align-items: baseline;
+            justify-items: center;
+        }
+        .main__item--content-heade-ionicon ion-icon{
+            font-size: 0.8rem;
+        }
+        .main__item--content-heade-ionicon-h3 h3{
+            margin-left: 5px;
+            font-size: 0.8rem;
+        }
+        .main__item--content-h3{
+            display: flex;
+            padding: 10px 0;
+        }
+        .main__item--content-h3 h3 a{
+            text-decoration: none;
+            color: #4b4b4b;
+            font-size: 0.9rem;
+        }
+        .main__item--content-h3 p a{
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: black;
+        }
+        .main__item--content-4img-img-boder{
+            border-right: 1px solid #d1ccc0;
+        }
+        .main__item--content-4img-img img{
+            display: block;
+            width: 100%;
+        }
+        
+        .main__item--content-4img-img-h3 h3{
+            display: block;
+            font-size: 0.9rem;
+
+        }
+        .main__item--content-4img-img{
+            padding: 10px;
+        }
+        .main__item--content-4img-quanli{
+            display: flex;
+        }
+        .main__item--content-4img{
+            margin-bottom: 20px;
+        }
+        .main__item--content-2img{
+            margin-bottom: 20px;
+        }
+        .main__item--content-2img-qli-img-h3 h3{
+            display: block;
+            font-size: 0.9rem;
+        }
+        .main__item--content-2img-qli{
+            display: flex;
+            max-width: 100%;
+            justify-content: center;
+        }
+        .main__item--content-2img-qli-img img{
+            display: block;
+            width: 100%;
+
+        }
+        .main__item--content-2img-qli-img2 img{
+            display: block;
+            width: 100%;
+        }
+        .main__item--content-2img-qli-img{
+            padding: 10px;
+            max-width: 100%;
+            display: block;
+        }
+        .main__item--content-2img-qli-img2{
+            padding: 10px;
+        }
+        @media screen and (max-width:1200px) {
+            .main__item--quanli{
+                margin: 0;
+            }
+            .main__item--content-h3{
+                padding: 10px 20px;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .main__item--content-4img-quanli{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .main__item--content-4img-img2{
+                flex-basis: 50%;
+                border: none;
+            }
+            .main__item--content-4img-img22{
+                flex-basis: 50%;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--Phần đầu-->
+        <header class="header_content">
+            <section class="header_content-ql">
+                <div class="header_content-ql--logo">
+                    <a href="trangchu.html"><img src="img/yame-f-logo-white.png" alt=""></a>
+                </div>
+                <div class="header_content-ql--4item">
+                    <div class="header_content-ql--4item-item">
+                        <ul >
+                            <li class="menu">
+                                <a id="hover" href="#">
+                                    BỘ SƯU TẬP 
+                                    <ion-icon id="ic1" name="chevron-down-outline"></ion-icon>
+                                </a>
+                                    <ul class="menu__menu">
+                                        <li>
+                                            <a href="#">Y2010 Originals</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Nghệ thuật Tối Giản</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Đơn Giản mà Sang</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Space</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Linh vật Bbuff</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Thần Horus</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Valknut Cổ Đại</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Thần Anubis</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Linh vật Rồng</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Thần Poseidon</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Phụ Kiện Thời Trang</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Vạn Xuân Kiến Quốc</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Đại Hành Khả</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">4 Element</a>
+                                        </li>
+                                    </ul>
+                            </li>
+                            
+                        </ul>         
+                    </div>
+                    <div class="header_content-ql--4item-item">
+                        <h3><a href="#">GU TỐI GIÃN</a></h3>
+                    </div>
+                    <div class="header_content-ql--4item-item">
+                        <ul>
+                            <li  class="menu2">
+                                <a href="#">
+                                    GU ĐƠN GIÃN <ion-icon id="ic1" name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="menu2__menu2">
+                                    <li>
+                                        <a href="#">Áo thun đơn giản</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Áo khoác đơn giản 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Áo sơ mi đơn giản</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Quần dài đơn giản</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Quần short đơn giản</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_content-ql--4item-item">
+                        <ul>
+                            <li class="menu3">
+                                <a href="#">GU THIẾT KẾ <ion-icon id="ic1" name="chevron-down-outline"></ion-icon></a>
+                                    <ul class="menu3__menu3">
+                                        <li>
+                                            <a href="#">GU 12 Vị Anh Hùng Dân Tộc</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">GU Thần Cổ Đại</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">GU Ngân Hà</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">GU Y Nguyên Bản 18+</a>
+                                        </li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_content-ql--4item-item header_content-ql--4item-2item">
+                        <ion-icon name="reorder-three-outline"></ion-icon>
+                        <ion-icon id="ic1" name="chevron-down-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="header_content-ql--icon">
+                    <ion-icon class="ic_seach" name="search-sharp"></ion-icon>
+                    <ion-icon class="ic_user" name="person-outline"></ion-icon>
+                    <ion-icon class="ic_cart" name="cart"></ion-icon>
+                </div>
+            </section>
+        </header>
+        <!--phân giữa-->
+        <main class="main__item">
+            <div class="main__item--quanli">
+                <section class="main__item--content">
+                    <div class="main__item--content-header">
+                        <div class="main__item--content-heade-ionicon">
+                            <ion-icon name="home"></ion-icon>
+                            <div class="main__item--content-heade-ionicon-h3">
+                                <h3>/ Áo Thun</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__item--content-h3">
+                    <h3><a href="#">Nổi bật /</a></h3>
+                    <h3><a href="#">Bán chạy /</a></h3>
+                    <p><a href="#">Mới </a></p>
+                </section>
+                <section class="main__item--content-4img">
+                    <div class="main__item--content-4img-quanli">
+                        <div class="main__item--content-4img-img main__item--content-4img-img2 ">
+                            <a href="thongtinsp.html"><img src="img2/i5.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img-boder main__item--content-4img-img2">
+                            <a href="thongtinsp2.html"><img src="img2/i6.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img  main__item--content-4img-img22">
+                            <a href="thongtinsp3.html"><img src="img2/i7.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img  main__item--content-4img-img22">
+                            <a href="thongtinsp4.html"><img src="img2/i8.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__item--content-4img">
+                    <div class="main__item--content-4img-quanli">
+                        <div class="main__item--content-4img-img main__item--content-4img-img2" >
+                            <a href="thongtinsp2.html"><img src="img2/i9.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img-boder main__item--content-4img-img2">
+                            <a href="thongtinsp2.html"><img src="img2/i10.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3 ">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img22">
+                            <a href="thongtinsp2.html"><img src="img2/i11.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img22">
+                            <a href="thongtinsp2.html"><img src="img2/i12.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__item--content-2img">
+                    <div class="main__item--content-2img-qli">
+                        <div style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 722px;" class="main__item--content-2img-qli-img main__item--content-4img-img-boder main__item--content-4img-img2"></a>
+                            <a href="thongtinsp2.html"><img src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-ngan-ha-space-ver47-0021840/9a0bb453-3529-1301-7f55-0019c03e59bb.jpg?w=540&h=756&c=true&ntf=false" alt="">
+                            <div class="main__item--content-2img-qli-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 722px;" class="main__item--content-2img-qli-img2 main__item--content-4img-img22">
+                            <a href="thongtinsp2.html"><img  src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-12vahdt-long-van-thien-o-ver5-0021828/bf1469b2-bb63-be00-b3f0-0019c039277b.jpg?w=540&h=756&c=true&ntf=false" alt=""></a>
+                            <div class="main__item--content-2img-qli-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__item--content-4img">
+                    <div class="main__item--content-4img-quanli">
+                        <div class="main__item--content-4img-img main__item--content-4img-img2">
+                            <a href="thongtinsp2.html"><img src="img2/i5.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img-boder main__item--content-4img-img2">
+                            <a href="thongtinsp2.html"><img src="img2/i6.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img22">
+                            <a href="thongtinsp2.html"><img src="img2/i7.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img22">
+                            <a href="thongtinsp2.html"><img src="img2/i8.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__item--content-4img">
+                    <div class="main__item--content-4img-quanli">
+                        <div class="main__item--content-4img-img main__item--content-4img-img2">
+                            <a href="thongtinsp2.html"><img src="img2/i5.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img-boder main__item--content-4img-img2">
+                            <a href="thongtinsp2.html"><img src="img2/i6.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img22">
+                            <a href="thongtinsp2.html"><img src="img2/i7.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img22">
+                            <a href="thongtinsp2.html"><img src="img2/i8.jpg" alt=""></a>
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__item--content-2img">
+                    <div class="main__item--content-2img-qli">
+                        <div style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 722px;" class="main__item--content-2img-qli-img main__item--content-4img-img-boder main__item--content-4img-img2">
+                            <img  src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-ngan-ha-space-ver44-0021756/821152bd-b9af-f900-f170-0019c03baf68.jpg?w=540&h=756&c=true&ntf=false" alt="">
+                            <div class="main__item--content-2img-qli-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 722px;" class="main__item--content-2img-qli-img2 main__item--content-4img-img22">
+                            <img  src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-y-nguyen-ban-18-ver130-0021757/c9f20b50-4504-4900-0d33-0019aa3cd1b5.jpg?w=540&h=756&c=true&ntf=false" alt="">
+                            <div class="main__item--content-2img-qli-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__item--content-4img">
+                    <div class="main__item--content-4img-quanli">
+                        <div class="main__item--content-4img-img main__item--content-4img-img2">
+                            <img src="img2/i5.jpg" alt="">
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img-boder main__item--content-4img-img2">
+                            <img src="img2/i6.jpg" alt="">
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img22">
+                            <img src="img2/i7.jpg" alt="">
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img22">
+                            <img src="img2/i8.jpg" alt="">
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__item--content-4img">
+                    <div class="main__item--content-4img-quanli">
+                        <div class="main__item--content-4img-img main__item--content-4img-img2">
+                            <img src="img2/i5.jpg" alt="">
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img-boder main__item--content-4img-img2">
+                            <img src="img2/i6.jpg" alt="">
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img22">
+                            <img src="img2/i7.jpg" alt="">
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div class="main__item--content-4img-img main__item--content-4img-img2">
+                            <img src="img2/i8.jpg" alt="">
+                            <div class="main__item--content-4img-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__item--content-2img">
+                    <div class="main__item--content-2img-qli">
+                        <div style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 722px;" class="main__item--content-2img-qli-img main__item--content-4img-img-boder main__item--content-4img-img2">
+                            <img  src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-on-gian-linh-vat-bbuff-ver20-0021718/367a391b-a326-7f00-5ac3-0019cb364709.jpg?w=540&h=756&c=true&ntf=false" alt="">
+                            <div class="main__item--content-2img-qli-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                        <div style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 722px;" class="main__item--content-2img-qli-img2 main__item--content-4img-img22">
+                            <img  src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-on-gian-linh-vat-bbuff-ver20-0021719/0e9a752e-a5d6-8e00-40bc-0019cb38f90f.jpg?w=540&h=756&c=true&ntf=false" alt="">
+                            <div class="main__item--content-2img-qli-img-h3">
+                                <h3>227.000 đ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!--phần kết-->
+        <footer class="footer_end">
+            <div class="footer_end--quanli">
+                <section class="footer_end--quanli-item">
+                    <div class="footer_end--quanli-1img">
+                        <img width="106.59px" height="70px" src="img/yame-f-logo-white.png" alt="">
+                    </div>
+                    <div class="footer_end--quanli-h4-p">
+                        <h4><a href="#">Đặt hàng và thu tiền tận nơi toàn quốc</a></h4>
+                        <p><a href="#">(070) 2593 867</a></p>
+                        <h4><a href="#">Than phiền/Góp ý</a></h4>
+                        <h5>
+                            <a href="#">
+                                Xem thêm thông tin YaMe 
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </a>
+                        </h5>
+                    </div>
+                </section>
+                <div class="footer_end--quanli-4content">
+                    <section class="footer_end--quanli-diadiem footer_end--quanli-diadiem-diadiem ">
+                        <div class="footer_end--quanli-diadiem-tp">
+                            <h3>
+                                <a href="#">
+                                    <ion-icon name="telescope-outline"></ion-icon> Tp.HỒ CHÍ MINH
+                                </a>
+                            </h3>
+                            <div class="footer_end--quanli-diadiem-tp-10tp">
+                                <h4><a href="#"> YaMe Q.10: 770F, Sư Vạn Hạnh (nd)</a></h4>
+                                <h4><a href="#">  YaMe Q.5: 190, Nguyễn Trãi</a></h4>
+                                <h4><a href="#">  YaMe Q.6: 102 Hậu Giang</a></h4>
+                                <h4><a href="#">  YaMe Q.7: 323 Huỳnh Tấn Phát</a></h4>
+                                <h4><a href="#">  YaMe Q.9: 114 Đỗ Xuân Hợp</a></h4>
+                                <h4><a href="#">  YaMe Q9: 200 Lê Văn Việt</a></h4>
+                                <h4><a href="#">  YaMe Q12: 290 Phan Văn Hớn</a></h4>
+                                <h4><a href="#">  YaMe Q.BT: 138 Lê Văn Duyệt</a></h4>
+                                <h4><a href="#">  YaMe Tân Phú 2: 189 Hòa Bình</a></h4>
+                                <h4><a href="#">  YaMe Q.Bình Tân: 232 Lê Văn Quới</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer_end--quanli-diadiem2 footer_end--quanli-diadiem-diadiem">
+                        <div class="footer_end--quanli-diadiem2-tnb">
+                            <h3>
+                                <a href="#"><ion-icon name="telescope-outline"></ion-icon>TÂY NAM BỘ</a>
+                            </h3>
+                            <div class="footer_end--quanli-diadiem2-tnb--10dd">
+                                <h4><a href="#">  YaMe Cần Thơ: 45 đ. 3 Tháng 2</a></h4>
+                                <h4><a href="#">   YaMe Cần Thơ: 381B Nguyễn Văn Cừ</a></h4>
+                                <h4><a href="#">   YaMe Tân An: 492 Hùng Vương</a></h4>
+                                <h4><a href="#">   YaMe Mỹ Tho: 326 đường Ấp Bắc</a></h4>
+                                <h4><a href="#">   YaMe Cái Bè: 455 ĐT875 Khu 4</a></h4>
+                                <h4><a href="#">   YaMe Bến Tre:209 Đồng Khởi Tp.BT</a></h4>
+                                <h4><a href="#">   YaMe Sa Đéc - 289 Nguyễn Sinh Sắc</a></h4>
+                                <h4><a href="#">   YaMe Cao Lãnh: 66A Tôn Đức Thắng</a></h4>
+                                <h4><a href="#">  YaMe Tân Phú 2: 189 Hòa Bình</a></h4>
+                                <h4><a href="#">   YaMe Vĩnh Long: 27A Phạm Thái Bườngi</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer_end--quanli-diadiem2 footer_end--quanli-diadiem-diadiem-diadiem">
+                        <div class="footer_end--quanli-diadiem2-dnbvatn">
+                            <h3>
+                                <a href="#">
+                                    <ion-icon name="telescope-outline"></ion-icon> ĐÔNG NAM BỘ & TÂY NGUYÊN
+                                </a>
+                            </h3>
+                            <div class="footer_end--quanli-diadiem2-dnbvatn-10dd">
+                                <h4><a href="#">   YaMe Tp.Thủ Dầu Một: 187, Yersin</a></h4>
+                                <h4><a href="#">    YaMe Tp. Dĩ An: 82A Nguyễn An Ninh</a></h4>
+                                <h4><a href="#">    YaMe Tp. Thuận An: 132 Ngô Quyền</a></h4>
+                                <h4><a href="#">    YaMe Biên Hòa: 30, Dương Tử Giang</a></h4>
+                                <h4><a href="#">    YaMe Vũng Tàu: 528 Trương Công Định</a></h4>
+                                <h4><a href="#">    YaMe Tây Ninh: 586 Cách Mạng Tháng 8</a></h4>
+                                <h4><a href="#">   YaMe Đồng Xoài: 766 Phú Riềng Đỏ</a></h4>
+                                <h4><a href="#">    YaMe Buôn Ma Thuột: 64 Phan Chu Trinh</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer_end--quanli-diadiem footer_end--quanli-diadiem-diadiem-diadiem">
+                        <div class="footer_end--quanli-diadiem-tp">
+                            <h3>
+                                <a href="#">
+                                    <ion-icon name="telescope-outline"></ion-icon> Tp.HỒ CHÍ MINH
+                                </a>
+                            </h3>
+                            <div class="footer_end--quanli-diadiem-tp-10tp">
+                                <h4><a href="#"> YaMe Q.10: 770F, Sư Vạn Hạnh (nd)</a></h4>
+                                <h4><a href="#">  YaMe Q.5: 190, Nguyễn Trãi</a></h4>
+                                <h4><a href="#">  YaMe Q.6: 102 Hậu Giang</a></h4>
+                                <h4><a href="#">  YaMe Q.7: 323 Huỳnh Tấn Phát</a></h4>
+                                <h4><a href="#">  YaMe Q.9: 114 Đỗ Xuân Hợp</a></h4>
+                                <h4><a href="#">  YaMe Q9: 200 Lê Văn Việt</a></h4>
+                                <h4><a href="#">  YaMe Q12: 290 Phan Văn Hớn</a></h4>
+                                <h4><a href="#">  YaMe Q.BT: 138 Lê Văn Duyệt</a></h4>
+                                <h4><a href="#">  YaMe Tân Phú 2: 189 Hòa Bình</a></h4>
+                                <h4><a href="#">  YaMe Q.Bình Tân: 232 Lê Văn Quới</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            </footer>
+    </div>    
+</body>
+</html>

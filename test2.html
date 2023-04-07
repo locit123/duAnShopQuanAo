@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/65b48a8326.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: gold;
+        }
+
+        .menu {
+            display: flex;
+            
+            justify-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+
+        nav a {
+            font-weight: bold;
+        }
+
+        .menu {
+            list-style-type: none;
+            font-weight: bold;
+
+        }
+
+        .menu li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .btn-toggle-menu,
+        input {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            nav {
+                flex-wrap: wrap;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .menu li {
+                margin: 20px;
+            }
+
+            .menu li {
+                padding: 5px;
+            }
+
+            .btn-toggle-menu {
+                display: unset;
+                margin-right: 20px;
+            }
+
+            #toggle-menu:checked+.menu {
+                display: block;
+                width: 100%;
+                background-color: gold;
+                text-align: center;
+                border-top: 1px solid black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="#">Phùng lộc</a>
+            <label for="toggle-menu" class="btn-toggle-menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="menu">
+                <li class="active"><a href="#">Trang chủ</a></li>
+                <li class=""><a href="#">Hỗ trợ</a></li>
+                <li class=""><a href="#">Liên hệ</a></li>
+                <li class=""><a href="#">Sản phẩm</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

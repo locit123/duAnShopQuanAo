@@ -1,0 +1,22 @@
+.postitem{
+    width: calc(97% /2);
+}
+.main_giohang--quanli-fromdangnhap-or{
+    padding-top: 20px;
+}
+.baomat_h3{
+    display: flex;
+    justify-content: center;
+}
+.main_giohang--quanli-fromdangnhap-dieukhoan h3{
+    font-size: 0.9rem;
+    
+}
+.baomat_h3 h3{
+    color: #EE5A24;
+}
+.main_giohang--quanli-fromdangnhap-dieukhoan{
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px 0 0 0;
+}

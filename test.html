@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color:#fff;
+    color: slategray;
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+a{
+    text-decoration:none;
+    color: slategray;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+
+} 
+.container{
+    max-width: 1400px;
+    margin: 20px auto;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+.post-item{
+    width: calc(100%/3 - 20px);
+    margin-left: 20px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,3);
+    cursor: pointer;
+    transition: 0.4s linear;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 990px){
+.post-item{
+    width:calc( 100%/2 - 20px); 
+    flex-wrap: wrap;
+}
+}
+@media screen and (max-width: 576px){
+    .post-item{
+        width:calc( 100% - 20px);
+        flex-wrap: wrap;
+    }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="posts">
+            <div class="post-item">
+                <a href="#" class="post-image"><img src="img2/i1.jpg" alt="" class=""></a>
+                <div class="post-content">
+                    <h2 class="post-title"><a href="">Ngành IT liệu có hết “HOT” trong vài năm tới?</a></h2>
+                    <p class="post-description">
+                        Chào các bạn, một vài hôm trước mình có đọc được một bài báo thống kê rằng...</p>
+                    <div class="post-author">
+                        <img src="images/pson2.jpg" alt="" class="author-img">
+                        <div class="infor-author">
+                            <p class="">Lorra</p>
+                            <p>Dev</p>
+                        </div>
+                        <span class="post-time">8-Apr</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-item">
+                <a href="#" class="post-image"><img src="img2/i2.jpg" alt="" class=""></a>
+                <div class="post-content">
+                    <h2 class="post-title"><a href="#">Cách sửa lỗi The DNS Server isn’t Responding trên Windows </a></h2>
+                    <p class="post-description">Và trong quá trình sử dụng máy tính, không biết các bạn thế nào chứ mình thì đôi khi gặp phải lỗi DNS Server is not responding khiến mình không tài nào kết nối vào Internet được.</p>
+                    <div class="post-author">
+                        <img src="images/pson1.jpg" alt="" class="author-img">
+                        <div class="infor-author">
+                            <p class="">Peter</p>
+                            <p>Teacher</p>
+                    </div>
+                        <span class="post-time">8-Apr</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-item">
+                <a href="#" class="post-image"><img src="img2/i3.jpg" alt="" class=""></a>
+                <div class="post-content">
+                    <h2 class="post-title"><a href="">Kiểm thử phần mềm trên các thiết bị di động</a></h2>
+                    <p class="post-description">Cho dù bạn có kinh nghiệm hay mới vào nghề, kiến thức cơ bản về kiểm thử phần mềm luôn luôn là cần thiết trong mọi loại kiểm thử mà các bạn sẽ thực hiện. Các bạn tham khảo thêm ở bài viết này nhé.</p>
+                    <div class="post-author">
+                        <img src="images/pson3.jpg" alt="" class="author-img">
+                        <div class="infor-author">
+                            <p class="">Marry</p>
+                            <p>Teacher</p>
+                        </div>
+                        <span class="post-time">8-Apr</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

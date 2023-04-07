@@ -1,0 +1,150 @@
+.main_giohang--quanli{
+    margin: 0 70px;
+}
+.main_giohang--quanli-icon-h3{
+    background-color: #dcdde1;
+    display: flex;
+    padding: 5px 0;
+}
+.main_giohang--quanli-icon-h3 ion-icon{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.main_giohang--quanli-icon-h3 a{
+    text-decoration: none;
+    color: #2f3640;
+    font-weight: 400;
+}
+.h3__ctdh{
+    padding: 7px 0;
+}
+.h3__ctdh h3{
+    font-size: 1.2rem;
+    color: #2f3640;
+    font-weight: 700;
+}
+.icon__p{
+    display: flex;
+}
+.icon__p a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #2f3640;
+}
+.main_giohang--quanli-left-p1-sp{
+    display: flex;
+    border-top: 1px solid #d1d8e0;
+}
+.h4__h3 h4{
+    padding: 10px 0;
+}
+.h4__h3 h4 a{
+    text-decoration: none;
+    color: #2f3640;
+    font-size: 0.8rem;
+}
+.h3__p{
+    padding-bottom: 10px;
+    display: flex;
+}
+.h3__p a{
+    text-decoration: none;
+    color: #2f3640;
+    font-size: 1rem;
+}
+.main_giohang--quanli-left-p2-tt{
+    margin-left: 10px;
+}
+.main_giohang--quanli-left{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_giohang--quanli-left-p1{
+    width: calc(100%/2);
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.main_giohang--quanli-left-p2-tt-ip{
+    display: flex;
+    
+}
+.main_giohang--quanli-left-p2-tt-ip input{
+    width: 100%;
+    margin-right: 10px;
+}
+.main_giohang--quanli-left-p2-tt{
+    width: 100%;
+}
+.setright{
+    padding-right: 10px;
+}
+.setleft{
+    padding-left: 10px;
+}
+.p__ip p{
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.btn_dh{
+    display: block;
+    margin-top: 20px;
+}
+.btn_dh button{
+    width: 100%;
+    background-color: #0fb9b1;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+.btn_dh a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.btn_ttmh button{
+    background-color: #f7b731;
+}
+.input_radio{
+    width: 20px;
+}
+.lb_block{
+    display: block;
+    padding: 20px 0;
+}
+.lb_bottom{
+    display: block;
+    padding-bottom: 10px;
+
+}
+.tong{
+    display: flex;
+    justify-content: center;
+}
+.tong h3{
+    display: block;
+    font-size: 1.2rem;
+}
+.btn_udate{
+    padding: 0 5px;
+    font-size: 0.8rem;
+}
+@media screen and (max-width:768px) {
+    .main_giohang--quanli-left-p1{
+        width: calc(100%/1);
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .main_giohang--quanli{
+        margin: 0 10px;
+    }
+}
+.main_giohang--quanli-left-p2-tt-ip-h3 h3{
+    padding: 5px 0 10px 0; 
+}
